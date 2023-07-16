@@ -63,12 +63,14 @@ public class Tictactoe extends JFrame implements ActionListener{
 
 		winner = checkWinner(buttons, row, col);
 		if(winner) {
+			label.setText(player + " player won!");
 			int response = JOptionPane.showConfirmDialog(null, player + " player won. Do you want to play again", "Winner", JOptionPane.YES_NO_OPTION);
 			if(response == JOptionPane.YES_OPTION) 
 				resetBoard(buttons);
 			else this.dispose();
 		}
 		else if(turn == 9) {
+			label.setText("Game draw!");
 			int response = JOptionPane.showConfirmDialog(null, "No winner, game draw, want to play again", "Game Draw!", JOptionPane.YES_NO_OPTION);
 			if(response == JOptionPane.YES_OPTION) 
 				resetBoard(buttons);
