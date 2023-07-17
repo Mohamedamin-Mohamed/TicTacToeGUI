@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 
-public class Tictactoe extends JFrame implements ActionListener{
+public class TicTacToe extends JFrame implements ActionListener{
 	private JButton[][] buttons = new JButton[3][3];
 	private JPanel panel;
 	private JLabel label;
@@ -20,7 +20,7 @@ public class Tictactoe extends JFrame implements ActionListener{
 	private int turn = 0;
 	private boolean winner = false;
 
-	public Tictactoe() {
+	public TicTacToe() {
 
 		setTitle("TicTacToe GUI App");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -107,7 +107,7 @@ public class Tictactoe extends JFrame implements ActionListener{
 	}
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(()->{;
-		new Tictactoe();
+		new TicTacToe();
 		});
 	}
 }
