@@ -1,5 +1,5 @@
 /*
- * Files: ConnectFourModel.java          
+ * Files: Model.java          
  * Author: Mohamedamin Mohamed          
  * Contact mohamedamin204080@gmail.com  
  * Created 07/16/2023    
